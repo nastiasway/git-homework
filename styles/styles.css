@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(1, 100%);
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.image {
+    height: 150px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.text2 {
+    font-size: 16px;
+}
+
+.text {
+    font-size: 24px;
+}
+
+@media screen and (min-width:650px) and (max-width:1249px) {
+    .container {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .container {
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: repeat(4, 25%);
+    }
+}
